@@ -16,21 +16,21 @@ const Blogs = ({blogs, categories, tags, totalBlogs,blogSkip,blogsLimit, router}
     const [size, setSize] = useState(totalBlogs);
     const [loadedBlogs,setLoadedBlogs] = useState([]);
 
-    const head = () => (
-        <Head>
-            <title>Programming blogs | {API_NAME}</title>
-            <meta name="description" content="nfjnsjnvdjsnj" />
-            <link rel="canonical" href={`${DOMAIN}/${router.pathname}`} />
-            <meta property="og:title" content={`Latest web development content | ${API_NAME}`} />
-            <meta name="og:description" content="nfjnsjnvdjsnjbdkawbjkjadbwk" />
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content={`${DOMAIN}${router.pathname}`} />
-            <meta property="og:site_name" content={`${API_NAME}`} />
-            <meta property="og:image:secure_url" content={`${API_NAME}`} />
-            <meta property="og:image:type" content={`${API_NAME}`} />
-            <meta property="fb:app_id" content={`${API_NAME}`} />
-        </Head>
-    )
+    // const head = () => (
+    //     <Head>
+    //         <title>Programming blogs | {API_NAME}</title>
+    //         <meta name="description" content="nfjnsjnvdjsnj" />
+    //         <link rel="canonical" href={`${DOMAIN}/${router.pathname}`} />
+    //         <meta property="og:title" content={`Latest web development content | ${API_NAME}`} />
+    //         <meta name="og:description" content="nfjnsjnvdjsnjbdkawbjkjadbwk" />
+    //         <meta property="og:type" content="website" />
+    //         <meta property="og:url" content={`${DOMAIN}${router.pathname}`} />
+    //         <meta property="og:site_name" content={`${API_NAME}`} />
+    //         <meta property="og:image:secure_url" content={`${API_NAME}`} />
+    //         <meta property="og:image:type" content={`${API_NAME}`} />
+    //         <meta property="fb:app_id" content={`${API_NAME}`} />
+    //     </Head>
+    // )
 
     // logic for pagination
     const loadMore = () => {
@@ -88,7 +88,6 @@ const Blogs = ({blogs, categories, tags, totalBlogs,blogSkip,blogsLimit, router}
 
     return (
             <React.Fragment>
-            {head()}
             <Layout>
                 <main>
                     <div className="container-fluid">
