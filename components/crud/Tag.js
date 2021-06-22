@@ -90,7 +90,7 @@ const Tag = () => {
             </div><hr />
             <div>
                 <button type="submit" className="btn btn-primary">
-                    Create Category
+                    Create Tag
                 </button>
             </div>
         </form>
@@ -98,7 +98,7 @@ const Tag = () => {
 
     const showError = () => error ? <div className="alert alert-danger">{error}</div> : '';
     const showMessage = () => success ? <div className="alert alert-danger">{success}</div> : '';
-    const showSuccess = () => success2 ? <div className="alert alert-success">Category is successfully created!!!</div> : '';
+    const showSuccess = () => success2 ? <div className="alert alert-success">Tag is successfully created!!!</div> : '';
 
     return <React.Fragment>
         {showError()}
