@@ -22,7 +22,7 @@ const ProfileUpdate = () => {
     });
 
     const token = getCookie('token');
-    const { username, name, email, password, error, success, loading, photo, userData,user, about,username_for_photo } = values;
+    const { username, name, email, password, error, success, loading, photo, user, about,username_for_photo } = values;
 
     const init = () => {
         getProfile(token).then(data => {
