@@ -4,6 +4,7 @@ import Router from 'next/router';
 import { getCookie, isAuth, updateUser } from '../actions/auth';
 import { getProfile, update} from '../actions/user';
 import { API } from '../config';
+import FormData from 'form-data';
 
 const ProfileUpdate = () => {
     const [values, setValues] = useState({
@@ -18,7 +19,6 @@ const ProfileUpdate = () => {
         success: false,
         loading: false,
         photo: '',
-        userData: ''
     });
 
     const token = getCookie('token');
@@ -42,6 +42,7 @@ const ProfileUpdate = () => {
         });
     };
 
+    const [userData, setUserData] = useState(new FormData())
     useEffect(() => {
         init();
     }, []);
@@ -49,9 +50,10 @@ const ProfileUpdate = () => {
     const handleChange = name => e => {
         // console.log(e.target.value);
         const value = name === 'photo' ? e.target.files[0] : e.target.value;
-        let userFormData = new FormData();
-        userFormData.set(name, value);
-        setValues({ ...values, [name]: value, userData: userFormData, error: false, success: false });
+        // let userFormData = new FormData();
+        userData.set(name, value);
+        setValues({ ...values, [name]: value, error: false, success: false });
+        setUserData(userData);
     };
 
     const handleSubmit = e => {
