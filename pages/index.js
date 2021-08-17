@@ -9,7 +9,7 @@ const Index = () => {
                     <div className="row">
                         <div className="col-md-12 text-center">
                             <h1 className="display-4 font-weight-bold">
-                                PROGRAMMING & WEB DEVELOPMENT BLOGS/TUTORIALS
+                                BLOGS/TUTORIALS
                             </h1>
                         </div>
                     </div>
@@ -20,7 +20,7 @@ const Index = () => {
                         <div className="col-md-12 text-center pt-4 pb-5">
                             <p className="lead">
                                 Best programming and web development blogs and tutorials on React Node NextJs and
-                                JavaScript
+                                JavaScript and also includes all types of Blogs and Tutorials
                             </p>
                         </div>
                     </div>
@@ -51,31 +51,7 @@ const Index = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-4">
-                            <div className="flip flip-horizontal">
-                                <div
-                                    className="front"
-                                    style={{
-                                        backgroundImage:
-                                            'url(' +
-                                            'https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg' +
-                                            ')'
-                                    }}
-                                >
-                                    <h2 className="text-shadow text-center h1">Node</h2>
-                                </div>
-                                <div className="back text-center">
-                                    <Link href="/categories/node">
-                                        <a>
-                                            <h3 className="h1">Node Js</h3>
-                                        </a>
-                                    </Link>
-                                    <p className="lead">
-                                        The worlds most popular backend development tool for JavaScript Ninjas
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                      
 
                     </div>
                 </div>
