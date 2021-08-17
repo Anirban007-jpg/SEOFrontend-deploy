@@ -57,10 +57,15 @@ const AdminIndex = () => {
                         <h1 style={{fontWeight: '700', fontDecoration: 'underline'}}>Blog Statistics</h1>
                         <hr/>
                             <p style={{fontSize: '1.5rem'}}>Nominated Blogs: 0</p>
+                            <p style={{fontSize: '1.5rem'}}>Created Nominated Blog Categories:</p>
+                        {/* <ol>
+                            <li>No Blogs to show</li>
+                        </ol> */}
+                        <p style={{marginLeft: '2rem'}}>No Nominated blogs to show</p>
                             <p style={{fontSize: '1.5rem'}}>Blogs Created: 1</p>
                             <p style={{fontSize: '1.5rem'}}>Created Blog Categories:</p>
                             <ol>
-                                <li>React</li>
+                                <li>React By Anirban</li>
                             </ol>
                         <hr/>
                         <p style={{fontWeight: '800'}}>NOTE: Charts and pie Graphs will be added later as the development of this app progresses!</p>
