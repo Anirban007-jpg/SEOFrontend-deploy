@@ -34,10 +34,25 @@ const UserIndex = () => {
                                         <a>Create Blog</a>
                                     </Link>
                                 </li>
+                                 <li className="list-group-item">
+                                    <Link href="user/update">
+                                        <a>Update Profile</a>
+                                    </Link>
+                                </li>
                         </ul>
                     </div>
                     <div className="col-md-8">
-                        right
+                        <h1 style={{fontWeight: '700', fontDecoration: 'underline'}}>Blog Statistics</h1>
+                        <hr/>
+                        <p style={{fontSize: '1.5rem'}}>Nominated Blogs: 0</p>
+                        <p style={{fontSize: '1.5rem'}}>Blogs Created: 0</p>
+                        <p style={{fontSize: '1.5rem'}}>Created Blog Categories:</p>
+                        {/* <ol>
+                            <li>No Blogs to show</li>
+                        </ol> */}
+                        <p style={{marginLeft: '2rem'}}>No blogs to show</p>
+                        <hr/>
+                        <p style={{fontWeight: '800'}}>NOTE: Charts and pie Graphs will be added later as the development of this app progresses!</p>
                     </div>
                 </div>                
             </div>

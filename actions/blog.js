@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch';
 import { API } from '../config';
-import querystring from 'query-string';
+import queryString from 'query-string';
 import { handleResponse } from './auth';
 
 export const createBlog = (blog, token) => {
@@ -146,8 +146,7 @@ export const updateBlogbyUser = (blog, slug, token) => {
 };
 
 export const listSearch = (params) => {
-    console.log('search params', params);
-    let query = querystring.stringify(params);
+    let query = queryString.stringify(params);
     console.log('query params', query);
     return fetch(`${API}/blog/search?${query}`, {
         method: 'GET'        
