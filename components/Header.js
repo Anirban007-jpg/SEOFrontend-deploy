@@ -127,7 +127,6 @@ const Header = () => {
           </Nav>
         </Collapse>
       </Navbar>
-      <Search />
     </div>
   );
 };
