@@ -30,8 +30,8 @@ const UserIndex = () => {
                     <div className="col-md-4">
                         <ul className="list-group">
                                 <li className="list-group-item">
-                                    <Link href="/user/createread/blog">
-                                        <a>View Blog</a>
+                                    <Link href="/blogs">
+                                        <a>View Blogs</a>
                                     </Link>
                                 </li>
                                  <li className="list-group-item">
