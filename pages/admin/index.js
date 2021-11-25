@@ -25,6 +25,7 @@ const AdminIndex = () => {
                     <div className="row mr-5 ml-5">
                         <div className="col-md-12 pt-5 pb-5">
                             <h2>Admin Dashboard</h2>
+                            <p>Welcome Administrator {isAuth().name}</p>           
                         </div>
                         <div className="col-md-4">
                             <ul className="list-group">
