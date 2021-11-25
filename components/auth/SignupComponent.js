@@ -71,7 +71,7 @@ const SignupComponent = () => {
                 <div className="form-group">
                     <label>Address</label>
                     <br/>
-                    <textarea  value={address}rows="2" type="text" className="form-control" placeholder="Enter your address..." onChange={handleChange('address')} />
+                    <textarea value={address} rows="2" type="text" className="form-control" placeholder="Enter your address..." onChange={handleChange('address')} />
                 </div>
                 <div className="form-group">
                     <label>Bio{" "}<strong>(Mention Something about yourself){" "}[{length-about.length} {length-about.length === 1 ? "word left" : "words left"}]</strong></label>
