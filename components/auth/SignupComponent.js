@@ -88,8 +88,8 @@ const SignupComponent = () => {
                     <br/>
                     <select value={role} type="Number" className="form-control" placeholder="Enter your role..." onChange={handleChange('role')}>
                         <option value=''>Select Role</option>
-                        <option value='0'>Blogger</option>
-                        <option value='1'>Admin-Blogger</option>
+                        <option value='0'>Customer</option>
+                        <option value='1'>Administrator</option>
                     </select>
                 </div>
                 <div className="form-group">
