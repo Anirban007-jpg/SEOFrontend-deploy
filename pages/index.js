@@ -29,8 +29,7 @@ const Index = () => {
 
                       
 
-                    </div>
-                </div>
+                    
             </article>
         </Layout>
     );
