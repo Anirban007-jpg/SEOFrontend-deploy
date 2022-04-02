@@ -43,6 +43,10 @@ const UserIndex = () => {
                         </ul>
                     </div>
                     <div className="col-md-8">
+                        <h1 style={{fontWeight: '700', fontDecoration: 'underline'}}>User Details</h1>
+                        <p style={{fontSize: '1.5rem'}}>Address:  {isAuth().address}</p>
+                        <p style={{fontSize: '1.5rem'}}>Email:  {isAuth().email}</p>
+                        <p style={{fontSize: '1.5rem'}}>Mobile No.:  {isAuth().mobile_no}</p><hr/>
                         <h1 style={{fontWeight: '700', fontDecoration: 'underline'}}>Blog Statistics</h1>
                         <hr/>
                         <p style={{fontSize: '1.5rem'}}>Nominated Blogs: 0</p>
