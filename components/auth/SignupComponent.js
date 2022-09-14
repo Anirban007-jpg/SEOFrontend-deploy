@@ -35,7 +35,8 @@ const SignupComponent = () => {
         }
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         setValues({...values, loading: true, error:''});
         const user = {name,email,address,length,about,mobile_no,password,role};
         signup(user)
